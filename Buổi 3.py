@@ -1,7 +1,33 @@
 EN_VN_Dict={
     'hello' : {'n' : 'xin chào'},
-    'bat' : {'n' : "con dơi",'v' : 'đánh bóng'}
-    }
+    'bat' : {'n' : "con dơi",'v' : 'đánh bóng'},
+    'address': {'n': 'địa chỉ', 'v': 'giải quyết, xưng hô'},
+    'bank': {'n': 'ngân hàng, bờ sông'},
+    'bark': {'n': 'vỏ cây', 'v': 'tiếng sủa'},
+    'cell': {'n': 'tế bào, phòng giam, pin'},
+    'crane': {'n': 'cần cẩu, con sếu', 'v': 'rướn cổ'},
+    'draft': {'n': 'bản nháp, gió lùa, hối phiếu', 'v': 'phác thảo'},
+    'express': {'v': 'biểu lộ, bày tỏ', 'adj': 'tốc hành'},
+    'fly': {'v': 'bay', 'n': 'con ruồi'},
+    'foot': {'n': 'chân, bàn chân, chân núi', 'v': 'thanh toán'},
+    'hand': {'n': 'tay, kim đồng hồ', 'v': 'trao, đưa'},
+    'jam': {'n': 'mứt, kẹt xe', 'v': 'làm kẹt'},
+    'key': {'n': 'chìa khóa, phím đàn, đáp án', 'adj': 'chủ chốt'},
+    'lead': {'v': 'dẫn đầu', 'n': 'chì'},
+    'lie': {'v': 'nằm, nói dối'},
+    'nail': {'n': 'móng tay, cái đinh', 'v': 'đóng đinh'},
+    'press': {'v': 'ấn, ép, báo chí', 'n': 'máy ép'},
+    'pupil': {'n': 'học sinh', 'n': 'con ngươi'},
+    'ring': {'n': 'nhẫn, vòng', 'v': 'rung chuông, gọi điện thoại'},
+    'seal': {'n': 'hải cẩu, con dấu', 'v': 'niêm phong'},
+    'sink': {'v': 'chìm', 'n': 'bồn rửa chén'},
+    'spring': {'n': 'mùa xuân, lò xo, suối', 'v': 'nhảy lên'},
+    'state': {'n': 'tiểu bang, trạng thái', 'v': 'phát biểu'},
+    'story': {'n': 'câu chuyện, tầng nhà'},
+    'train': {'n': 'xe lửa', 'v': 'huấn luyện'},
+    'trip': {'n': 'chuyến đi, vấp ngã', 'v': 'vấp'},
+    'wave': {'n': 'làn sóng, vẫy tay', 'v': 'vẫy tay'},
+}
 
 def Show_Dict():
     print("{Tiếng Anh} : {Tiếng Việt} (Loại từ)")
@@ -84,6 +110,14 @@ def Show_By_Conditions() :
                 if key == Show_Name :
                     for type, mean in value.items() :
                         print(f"{key}: {mean} ({type})")
+        elif Choose == 3 :
+            Show_Name = input("Nhập từ muốn hiển thị : ")
+            for key, value in EN_VN_Dict.items():
+                if key == Show_Name :
+                    Show_Type = input("Nhập loại từ muốn hiển thị (n/v/adj/adv): ")
+                    for type, mean in value.items() :
+                        if Show_Type == type :
+                            print(f"{key}: {mean} ({type})")
         else:
              print("Lỗi nhập sai cú pháp - Vui lòng nhập lại")
         Menu()
