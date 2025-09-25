@@ -143,24 +143,23 @@ class Diem:
         return math.sqrt((other.x - self.x)**2 + (other.y - self.y)**2)
     
     def Doi_Xung_Truc_Tung(self):
-        self.x *= -1
-        return self
+        return Diem(-self.x,self.y)
     
     def Doi_Xung_Truc_Hoanh(self):
-        self.y *= -1
-        return self
+        return Diem(self.x,-self.y)
     
     def Doi_Xung_Ca_Hai_Truc(self):
-        self.x *= -1
-        self.y *= -1
-        return self
+        return Diem(-self.x,-self.y)
+    
+    def trung_diem(self,other):
+        return Diem((self.x + other.x)/2,(self.y + other.y)/2)
     
     def Thuoc_Truc_Nao(self):
         if (self.x == 0 and self.y == 0):
             return "Cả hai trục (trục hoành và trục tung)"
-        elif (self.x == 0):
-            return "Trục hoành"
         elif (self.y == 0):
+            return "Trục hoành"
+        elif (self.x == 0):
             return "Trục tung"
         return "Không thuộc trục nào cả"
     
@@ -178,17 +177,17 @@ class Diem:
     def Goc_Voi_Oy(self):
         return round(math.fabs(math.degrees(math.atan(self.x /self.y))),2)
     
-A = Diem(2,3)
-B = Diem(5,7)
+A = Diem.nhap()
+B = Diem.nhap()
+print(f"A : {A.hien_thi()}")
+print(f"B : {B.hien_thi()}")
 
 print(f"Khoảng cách giữa 2 điểm A và B la {A.Khoang_cach(B)}")
 print(f"Đối xứng trục tung đối với điểm {A.xuat()} là {A.Doi_Xung_Truc_Tung()}")
 print(f"Đối xứng trục hoành đối với điểm {B.xuat()} là {B.Doi_Xung_Truc_Hoanh()}")
 print(f"Đối xứng cả hai trục đối với điểm {B.xuat()} là {B.Doi_Xung_Ca_Hai_Truc()}")
 print(f"Điểm A thuộc trục : {A.Thuoc_Truc_Nao()}")
-
-print(f"A : {A.hien_thi()}")
-print(f"B : {B.hien_thi()}")
+print(f"Trung điểm của A và B : {A.trung_diem(B)}")
 
 print(f"Góc của OAx (OA và Ox) là : {A.Goc_Voi_Ox()}")
 print(f"Góc của OAy (OA và Oy) là : {A.Goc_Voi_Oy()}")
