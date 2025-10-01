@@ -2,11 +2,11 @@ import datetime
 import math
 
 BangQuyDoi={
-    'Mèo Anh lông ngắn' : {'Cắt lông' : 'Tỉa nhẹ : 3 - 4 tháng / lần', 'Thức ăn' : 'Hạt khô + Pate' , 'tiếng kêu' : 'Meo Meo'},
-    'Mèo Anh lông dài' : {'Cắt lông' : 'Cắt lông : 2 tháng / lần','Thức ăn' : 'Hạt khô + Pate', 'tiếng kêu' : 'Meo Meo'},
-    'Mèo ta' : {'Cắt lông' : 'Không cần cắt, chỉ cần chải lông định ','Thức ăn' : 'Cá / Thịt nấu','tiếng kêu' : 'Meo Meo'},
-    'Mèo Xiêm' : {'Cắt lông' : 'Không cần cắt, chỉ cần chải lông định ','Thức ăn' : 'Pate / Thịt mềm','tiếng kêu' : 'Meo Meo'},
-    'Mèo Ba Tư' : {'Cắt lông' : 'Cắt lông : 2 tháng / lần','Thức ăn' : 'Hạt mềm / Cá hồi / Thịt gà','tiếng kêu' : 'Meo Meo'},
+    'Mèo Anh lông ngắn' : {'Cắt lông' : 'Tỉa nhẹ : 3 - 4 tháng / lần', 'Thức ăn' : 'Hạt khô + Pate' , 'Tiếng kêu' : 'Meo meo'},
+    'Mèo Anh lông dài' : {'Cắt lông' : 'Cắt lông : 2 tháng / lần','Thức ăn' : 'Hạt khô + Pate', 'Tiếng kêu' : 'Meo meo'},
+    'Mèo ta' : {'Cắt lông' : 'Không cần cắt, chỉ cần chải lông định ','Thức ăn' : 'Cá / Thịt nấu','Tiếng kêu' : 'Mèo méo'},
+    'Mèo Xiêm' : {'Cắt lông' : 'Không cần cắt, chỉ cần chải lông định ','Thức ăn' : 'Pate / Thịt mềm','Tiếng kêu' : 'Mèo mèo'},
+    'Mèo Ba Tư' : {'Cắt lông' : 'Cắt lông : 2 tháng / lần','Thức ăn' : 'Hạt mềm / Cá hồi / Thịt gà','Tiếng kêu' : 'Meo mèo'},
 }
 
 
@@ -51,9 +51,10 @@ class ThuCung:
         print(f"Ngày sinh : Tháng {self.ThangSinh} Năm {self.NamSinh}  ({self.tinh_Tuoi()} tuổi)")
         print("Giống mèo : ",self.GiongMeo)
         print("Màu lông : ",self.MauLong)
+        print("Tiếng kêu : ",self.Keu())
 
     def hien_thi_chi_tiet(self) :
-        print(f"{self.Ma} | {self.Ten} | {self.ThangSinh}/{self.NamSinh} | {self.CanNang} | {self.GiongMeo} | {self.MauLong} | {self.Lich_Cat_Long()} | {self.Lich_Tiem_Chung()}")
+        print(f"{self.Ma} | {self.Ten} | {self.ThangSinh}/{self.NamSinh} | {self.CanNang} | {self.GiongMeo} | {self.MauLong} | {self.Keu()} |{self.Lich_Cat_Long()} | {self.Lich_Tiem_Chung()}")
         
     def Keu(self):
         for Giong,value in BangQuyDoi.items():
@@ -112,6 +113,45 @@ def Search_DSTC_by_Ma(DSTC,Ma) :
 
 def Xuat_Detail_DSTC(DSTC) : 
     for ThuCung in DSTC :
+        print(ThuCung)
+
+def Oldest_Pet(DSTC) :
+    max = 0;
+    for ThuCung in DSTC :
+        if ThuCung.tinh_TuanTuoi() > max :
+            max = ThuCung.tinh_TuanTuoi()
+            best = ThuCung
+    return best
+
+
+def menu(DSTC):
+    print("-----Quản Lý Thú Cưng-----")
+    print("1. Nhập danh sách thông tin thú cưng")
+    print("2. Hiển thị danh sách thú cưng")
+    print("3. Tìm kiếm thông tin thú cưng theo mã")
+    print("4. Hiển thị chi tiết thông tin thú cưng (Tất cả)")
+    print("5. Xuất ra con mèo già nhất trong danh sách")
+    print("6. Thoát")
+    print("--------------------------")
+    choice = int(input("Chọn chức năng (1-6): "))
+    if(choice == 1):
+        DSTC = Nhap_DSTC()
+    if (choice == 2) :
+        Xuat_Detail_DSTC(DSTC)
+    if (choice == 3):
+        Searching = input("Nhập mã thú cưng mà bạn cần tìm : ")
+        print(f"Kết quả : {Search_DSTC_by_Ma(DSTC,Searching)}")
+    if (choice == 4) :
+        for ThuCung in DSTC :
+            ThuCung.hien_thi_chi_tiet()
+    if (choice == 5) :
+        KQ = Oldest_Pet(DSTC)
+        KQ.hien_thi_chi_tiet()
+    #if (choice == 6) : 
+    menu(DSTC)
+
+DSTC = []
+menu(DSTC)    for ThuCung in DSTC :
         print(ThuCung)
 
 def Oldest_Pet(DSTC) :
