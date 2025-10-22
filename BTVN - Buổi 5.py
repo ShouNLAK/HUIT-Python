@@ -116,78 +116,43 @@ def Xuat_Detail_DSTC(DSTC) :
         print(ThuCung)
 
 def Oldest_Pet(DSTC) :
-    max = 0;
+    max = 0
+    best = None
     for ThuCung in DSTC :
         if ThuCung.tinh_TuanTuoi() > max :
             max = ThuCung.tinh_TuanTuoi()
             best = ThuCung
+    if best is None:
+        return "Danh sách thú cưng trống."
     return best
 
-
 def menu(DSTC):
-    print("-----Quản Lý Thú Cưng-----")
-    print("1. Nhập danh sách thông tin thú cưng")
-    print("2. Hiển thị danh sách thú cưng")
-    print("3. Tìm kiếm thông tin thú cưng theo mã")
-    print("4. Hiển thị chi tiết thông tin thú cưng (Tất cả)")
-    print("5. Xuất ra con mèo già nhất trong danh sách")
-    print("6. Thoát")
-    print("--------------------------")
-    choice = int(input("Chọn chức năng (1-6): "))
-    if(choice == 1):
-        DSTC = Nhap_DSTC()
-    if (choice == 2) :
-        Xuat_Detail_DSTC(DSTC)
-    if (choice == 3):
-        Searching = input("Nhập mã thú cưng mà bạn cần tìm : ")
-        print(f"Kết quả : {Search_DSTC_by_Ma(DSTC,Searching)}")
-    if (choice == 4) :
-        for ThuCung in DSTC :
-            ThuCung.hien_thi_chi_tiet()
-    if (choice == 5) :
-        KQ = Oldest_Pet(DSTC)
-        KQ.hien_thi_chi_tiet()
-    #if (choice == 6) : 
-    menu(DSTC)
-
-DSTC = []
-menu(DSTC)    for ThuCung in DSTC :
-        print(ThuCung)
-
-def Oldest_Pet(DSTC) :
-    max = 0;
-    for ThuCung in DSTC :
-        if ThuCung.tinh_TuanTuoi() > max :
-            max = ThuCung.tinh_TuanTuoi()
-            best = ThuCung
-    return best
-
-
-def menu(DSTC):
-    print("-----Quản Lý Thú Cưng-----")
-    print("1. Nhập danh sách thông tin thú cưng")
-    print("2. Hiển thị danh sách thú cưng")
-    print("3. Tìm kiếm thông tin thú cưng theo mã")
-    print("4. Hiển thị chi tiết thông tin thú cưng (Tất cả)")
-    print("5. Xuất ra con mèo già nhất trong danh sách")
-    print("6. Thoát")
-    print("--------------------------")
-    choice = int(input("Chọn chức năng (1-6): "))
-    if(choice == 1):
-        DSTC = Nhap_DSTC()
-    if (choice == 2) :
-        Xuat_Detail_DSTC(DSTC)
-    if (choice == 3):
-        Searching = input("Nhập mã thú cưng mà bạn cần tìm : ")
-        print(f"Kết quả : {Search_DSTC_by_Ma(DSTC,Searching)}")
-    if (choice == 4) :
-        for ThuCung in DSTC :
-            ThuCung.hien_thi_chi_tiet()
-    if (choice == 5) :
-        KQ = Oldest_Pet(DSTC)
-        KQ.hien_thi_chi_tiet()
-    #if (choice == 6) : 
-    menu(DSTC)
+    while(True):
+        print("-----Quản Lý Thú Cưng-----")
+        print("1. Nhập danh sách thông tin thú cưng")
+        print("2. Hiển thị danh sách thú cưng")
+        print("3. Tìm kiếm thông tin thú cưng theo mã")
+        print("4. Hiển thị chi tiết thông tin thú cưng (Tất cả)")
+        print("5. Xuất ra con mèo già nhất trong danh sách")
+        print("6. Thoát")
+        print("--------------------------")
+        choice = int(input("Chọn chức năng (1-6): "))
+        if(choice == 1):
+            DSTC = Nhap_DSTC()
+        elif (choice == 2) :
+            Xuat_Detail_DSTC(DSTC)
+        elif (choice == 3):
+            Searching = input("Nhập mã thú cưng mà bạn cần tìm : ")
+            print(f"Kết quả : {Search_DSTC_by_Ma(DSTC,Searching)}")
+        elif (choice == 4) :
+            for ThuCung in DSTC :
+                ThuCung.hien_thi_chi_tiet()
+        elif (choice == 5) :
+            KQ = Oldest_Pet(DSTC)
+            print(f"Thú cưng già nhất :{KQ.hien_thi_chi_tiet()}")
+        elif (choice == 6) : 
+            break
+        menu(DSTC)
 
 DSTC = []
 menu(DSTC)
