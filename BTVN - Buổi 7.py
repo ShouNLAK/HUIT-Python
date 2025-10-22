@@ -229,7 +229,6 @@ def Menu(ds_sach):
         else:
             print("Chuc nang khong hop le. Vui long chon lai.")
 
-
 if __name__ == "__main__":
     DS=[]
     Menu(DS)
