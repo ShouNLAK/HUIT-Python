@@ -1,0 +1,26 @@
+[
+     {
+          "ma_cay": "CX002",
+          "ten_cay": "Bằng lăng",
+          "tuyen_duong": "3 Tháng 2",
+          "chieu_cao": 4.8,
+          "duong_kinh_than": 0.18,
+          "tinh_trang": "Sau bão, gãy nhánh"
+     },
+     {
+          "ma_cay": "CX001",
+          "ten_cay": "Phượng vĩ",
+          "tuyen_duong": "Nguyễn Văn Cừ",
+          "chieu_cao": 6.5,
+          "duong_kinh_than": 0.25,
+          "tinh_trang": "Bình thường"
+     },
+     {
+          "ma_cay": "CX005",
+          "ten_cay": "Me tây",
+          "tuyen_duong": "Trần Hưng Đạo",
+          "chieu_cao": 7.4,
+          "duong_kinh_than": 0.28,
+          "tinh_trang": "Nghiêng nhẹ"
+     }
+]
