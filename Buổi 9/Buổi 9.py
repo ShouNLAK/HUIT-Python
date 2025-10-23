@@ -58,7 +58,7 @@ class DanhSachCayXanh():
         for DataCay in self.DS:
             if (DataCay.Ten.lower() == ten.lower()):
                 KQ.DS.append(DataCay)
-        return KQ if len(KQ.DS) > 0 else None
+        return KQ if KQ.DS else None
         
     def Nhap_XML(self,tenFile):
         with open(tenFile,'r',encoding='utf-8') as fi:
@@ -96,7 +96,7 @@ class DanhSachCayXanh():
             print("Ma cay xanh nay khong ton tai")
             return False
         DataCay.Xuat_Cay()
-        loai = int(input("Nhap loai du lieu ma ban muon chinh sua (1-Ten | 2-Tuyen duong | 3-Chieu cao | 4-Duong kinh | 5-Tinh trang"))
+        loai = int(input("Nhap loai du lieu ma ban muon chinh sua (1-Ten | 2-Tuyen duong | 3-Chieu cao | 4-Duong kinh | 5-Tinh trang) : "))
         giaTri = input("Nhap gia tri moi : ")
         DataCay.Update_Data(loai,giaTri)
         self.DS = [DataCay if DataCay.Ma == DataGoc.Ma else DataGoc for DataGoc in self.DS]
@@ -147,13 +147,13 @@ class DanhSachCayXanh():
     
     def SapXep_GDChieuCao(self):
         temp = DanhSachCayXanh()
-        temp.DS = self.DS
+        temp.DS = self.DS.copy()
         temp.DS.sort(key=lambda DataCay: DataCay.ChieuCao, reverse=True)
         return temp
         
     def SapXep_TDChieuCao(self):
         temp = DanhSachCayXanh()
-        temp.DS = self.DS
+        temp.DS = self.DS.copy()
         temp.DS.sort(key=lambda DataCay: DataCay.ChieuCao)
         return temp
         
@@ -174,12 +174,14 @@ class DanhSachCayXanh():
     
     def Loc_Cay_TinhTrangXau(self):
         List = DanhSachCayXanh()
-        TinhTrangXau = ["sâu bệnh", "gãy", "nghiêng", "lụi", "hư gốc"]
+        DS_TinhTrangXau = ["sâu bệnh", "gãy", "nghiêng", "lụi", "hư gốc"]
         for DataCay in self.DS:
-            for TinhTrang in TinhTrangXau :
-                if any(DataCay.TinhTrang.lower() in TinhTrang) :
+            TinhTrang = DataCay.TinhTrang.lower()
+            for tu_khoa in DS_TinhTrangXau:
+                if tu_khoa in TinhTrang:
                     List.DS.append(DataCay)
-        return List if len(List.DS) > 0 else None
+                    break
+        return List if List.DS else None
     
     def Count_Cay_BatThuong(self):
         loc_list = self.Loc_Cay_TinhTrangXau()
@@ -214,7 +216,10 @@ class DanhSachCayXanh():
         return List
     
     def SapXep_TDTuyenDuong(self):
-        self.DS.sort(key=lambda DataCay: DataCay.TuyenDuong)
+        temp = DanhSachCayXanh()
+        temp.DS = self.DS.copy()
+        temp.DS.sort(key=lambda DataCay: DataCay.TuyenDuong)
+        return temp
         
     def Count_Cay_BinhThuong(self):
         return self.Count_Cay() - self.Count_Cay_BatThuong()
@@ -228,7 +233,7 @@ class DanhSachCayXanh():
         for DataCay in self.DS:
             if (DataCay.ChieuCao >= a and DataCay.ChieuCao <= b):
                 List.DS.append(DataCay)
-        return List if len(List.DS) > 0 else None
+        return List if List.DS else None
     
 def Menu():
     print(" 1. Đọc dữ liệu từ file JSON")
@@ -293,8 +298,7 @@ def Process():
             print(f" >> Cay thap nhat : ")
             DanhSach.Min_ChieuCao().Xuat_DS()
         elif (chon == 9):
-            DanhSach.SapXep_GDChieuCao()
-            DanhSach.Xuat_DS()
+            DanhSach.SapXep_GDChieuCao().Xuat_DS()
         elif (chon == 10) :
             DanhSach.Ghi_XML("Cayxanh-Output.json")
             print(">> Da ghi file thanh cong")
@@ -335,8 +339,7 @@ def Process():
         elif (chon == 19):
             DanhSach.Max_DuongKinh().Xuat_DS()
         elif (chon == 20):
-            DanhSach.SapXep_TDTuyenDuong()
-            DanhSach.Xuat_DS()
+            DanhSach.SapXep_TDTuyenDuong().Xuat_DS()
         elif (chon == 21):
             print(f">> So cay Binh thuong : {DanhSach.Count_Cay_BinhThuong()}")
             print(f">> So cay Bat thuong : {DanhSach.Count_Cay_BatThuong()}")
@@ -368,3 +371,4 @@ def Process():
             print("Nhap sai chuong trinh")
 
 Process()
+ 
