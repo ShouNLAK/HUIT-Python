@@ -89,6 +89,7 @@ HUIT-Python/
 | **6** | 02/10/2025 | **Kiểm tra lần 1** | ✅ Hoàn thành |
 | **7** | 09/10/2025 | Xử lý file, JSON | ✅ Hoàn thành |
 | **8** | 16/10/2025 | Lập trình hướng đối tượng (OOP) | ✅ Hoàn thành |
+| **9** | 23/10/2025 | Lập trình hướng đối tượng (OOP) - Nâng cao| 💿 Chưa hoàn thành |
 
 ---
 
@@ -146,7 +147,7 @@ HUIT-Python/
 
 ---
 
-### 📌 Tuần 7 & 8 - Nâng cao
+### 📌 Tuần 7 & 8 & 9 - Nâng cao
 **Các chủ đề:**
 - Xử lý file (đọc/ghi)
 - JSON - Tuần tự hóa dữ liệu
