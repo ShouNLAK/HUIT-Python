@@ -12,7 +12,7 @@
 <p align="center">
   <img alt="Language" src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
   <img alt="University" src="https://img.shields.io/badge/University-HUIT-FF6B35?style=for-the-badge">
-  <img alt="Status" src="https://img.shields.io/badge/Status-Complete-00B894?style=for-the-badge">
+  <img alt="Status" src="https://img.shields.io/badge/Status-Ongoing-F5F227?style=for-the-badge">
   <img alt="License" src="https://img.shields.io/badge/License-Educational-0066CC?style=for-the-badge">
 </p>
 
@@ -60,6 +60,12 @@ HUIT-Python/
 │   ├── Buổi 8.py
 │   ├── DSSV.txt
 │   └── SinhVien.txt
+├── Buổi 9/                            # Bài tập trên lớp - Tuần 9 (Cũng là BTVN)
+│   ├── Buổi 9.py
+│   ├── Cayxanh.json
+│   ├── Cayxanh-Output.json
+│   ├── CayXau-Output.json
+│   ├── Top 3-Output.json
 ├── BTVN - Buoi 1.py                   # Bài tập về nhà - Tuần 1
 ├── BTVN - Buổi 2.py                   # Bài tập về nhà - Tuần 2
 ├── BTVN - Buổi 3.py                   # Bài tập về nhà - Tuần 3
@@ -89,7 +95,7 @@ HUIT-Python/
 | **6** | 02/10/2025 | **Kiểm tra lần 1** | ✅ Hoàn thành |
 | **7** | 09/10/2025 | Xử lý file, JSON | ✅ Hoàn thành |
 | **8** | 16/10/2025 | Lập trình hướng đối tượng (OOP) | ✅ Hoàn thành |
-| **9** | 23/10/2025 | Lập trình hướng đối tượng (OOP) - Nâng cao| 💿 Chưa hoàn thành |
+| **9** | 23/10/2025 | Lập trình hướng đối tượng (OOP) - Nâng cao| ✅ Hoàn thành |
 | **10** | 30/10/2025 | **Kiểm tra lần 2** | 🤔 Sắp có |
 
 ---
@@ -156,7 +162,8 @@ HUIT-Python/
 - Lớp (Class) và Đối tượng (Object)
 
 **Bài tập mẫu:**
-- Quản lý danh sách sinh viên
+- Quản lý danh sách sinh viên (Buổi 8)
+- Quản lý cây xanh (Buổi 9)
 - Đọc/ghi JSON
 - Định nghĩa lớp với các thuộc tính và phương thức
 
@@ -274,6 +281,6 @@ to use, copy, modify, merge, publish, and/or sublicense the Software...
 
 ⭐ Nếu repository này hữu ích, hãy cho sao!
 
-Last updated: 22nd October 2025
+Last updated: 23rd October 2025
 
 </div>
