@@ -65,7 +65,7 @@ HUIT-Python/
 │   ├── Cayxanh.json
 │   ├── Cayxanh-Output.json
 │   ├── CayXau-Output.json
-│   ├── Top 3-Output.json
+│   └── Top 3-Output.json
 ├── BTVN - Buoi 1.py                   # Bài tập về nhà - Tuần 1
 ├── BTVN - Buổi 2.py                   # Bài tập về nhà - Tuần 2
 ├── BTVN - Buổi 3.py                   # Bài tập về nhà - Tuần 3
