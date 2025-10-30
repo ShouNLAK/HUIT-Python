@@ -66,6 +66,10 @@ HUIT-Python/
 │   ├── Cayxanh-Output.json
 │   ├── CayXau-Output.json
 │   └── Top 3-Output.json
+├── Buổi 10.py                          # Bài tập trên lớp - Tuần 10
+|
+|
+|
 ├── BTVN - Buoi 1.py                   # Bài tập về nhà - Tuần 1
 ├── BTVN - Buổi 2.py                   # Bài tập về nhà - Tuần 2
 ├── BTVN - Buổi 3.py                   # Bài tập về nhà - Tuần 3
@@ -95,8 +99,9 @@ HUIT-Python/
 | **6** | 02/10/2025 | **Kiểm tra lần 1** | ✅ Hoàn thành |
 | **7** | 09/10/2025 | Xử lý file, JSON | ✅ Hoàn thành |
 | **8** | 16/10/2025 | Lập trình hướng đối tượng (OOP) | ✅ Hoàn thành |
-| **9** | 23/10/2025 | Lập trình hướng đối tượng (OOP) - Nâng cao| ✅ Hoàn thành |
-| **10** | 30/10/2025 | **Kiểm tra lần 2** | 🤔 Sắp có |
+| **9** | 23/10/2025 | Lập trình hướng đối tượng (OOP) - Nâng cao | ✅ Hoàn thành |
+| **10** | 30/10/2025 | Phát sinh ngẫu nhiên dữ liệu | 🛑 Đang phát triển |
+| **10** | 6/11/2025 | **Kiểm tra lần 2** | 🤔 Sắp có |
 
 ---
 
@@ -167,6 +172,16 @@ HUIT-Python/
 - Đọc/ghi JSON
 - Định nghĩa lớp với các thuộc tính và phương thức
 
+---
+
+### 📌 Tuần 10 - Ngẫu nhiên
+**Các chủ đề:**
+- Phát sinh giá trị ngẫu nhiên
+- Chọn phần tử ngẫu nhiên
+- Xáo trộn danh sách
+
+**Bài tập mẫu:**
+- Đoán số / Tung đồng xu / BlackJack
 ---
 
 ## 🚀 Hướng dẫn Sử dụng
