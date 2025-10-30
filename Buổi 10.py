@@ -116,7 +116,7 @@ class Game():
                         break
                 if (chon == 2) :
                     print(f"Nhà cái : {Host_Hand} | Giá trị : {self.Value_Of_Cards(Host_Hand)}")
-                    if ((random.random() >= 0.35 or self.Value_Of_Cards(Host_Hand) <= 10) and self.Value_Of_Cards(Your_Hand) <= 21) :
+                    while ((self.Value_Of_Cards(Host_Hand) < self.Value_Of_Cards(Your_Hand)) and self.Value_Of_Cards(Your_Hand) <= 21) :
                         Host_Hand.append(bai.pop(0))
                         print(f"Nhà cái : {Host_Hand} | Giá trị : {self.Value_Of_Cards(Host_Hand)}")
                 else :
@@ -128,7 +128,7 @@ class Game():
                 Lost+= 1
             elif (self.Value_Of_Cards(Host_Hand) < self.Value_Of_Cards(Your_Hand)) :
                 Win += 1
-                Total += 1
+            Total += 1
             History.append(f"{PlayNo:<10} | {self.Value_Of_Cards(Host_Hand):<10} | {self.Value_Of_Cards(Your_Hand):<10} | {'Win' if self.Value_Of_Cards(Host_Hand) < self.Value_Of_Cards(Your_Hand) else 'Lose'}")
             if (input("Nhập 0 để kết thúc chương trình") == '0'):
                 break
@@ -137,6 +137,7 @@ class Game():
         self.Show_History(History)
         print(f"Thông số hiện tại - Tổng số lần chơi : {Total} | Tổng số lần thắng : {Win} ")
                 
+    
 def Menu():
     print("1. Đoán số")
     print("2. Đoán mặt xu")
