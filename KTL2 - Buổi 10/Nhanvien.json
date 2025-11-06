@@ -1,0 +1,22 @@
+[
+  {"ma_nv": "NV001", "ho_ten": "Nguyen Van An", "user": "nv001", "pass": "pass001", "luong": 9500000, "gioi_tinh": "Nam", "tuoi": 45, "phong": "Điện máy"},
+  {"ma_nv": "NV002", "ho_ten": "Tran Thi Bich", "user": "nv002", "pass": "pass002", "luong": 8600000, "gioi_tinh": "Nữ", "tuoi": 53, "phong": "Thực phẩm"},
+  {"ma_nv": "NV003", "ho_ten": "Le Minh Tuan", "user": "nv003", "pass": "pass003", "luong": 31200000, "gioi_tinh": "Nam", "tuoi": 59, "phong": "Thời trang"},
+  {"ma_nv": "NV004", "ho_ten": "Pham Van Hoang", "user": "nv004", "pass": "pass004", "luong": 4500000, "gioi_tinh": "Nam", "tuoi": 58, "phong": "Điện máy"},
+  {"ma_nv": "NV005", "ho_ten": "Do Thi Mai", "user": "nv005", "pass": "pass005", "luong": 11200000, "gioi_tinh": "Nữ", "tuoi": 51, "phong": "Thời trang"},
+  {"ma_nv": "NV006", "ho_ten": "Nguyen Van Long", "user": "nv006", "pass": "pass006", "luong": 9600000, "gioi_tinh": "Nam", "tuoi": 60, "phong": "Thực phẩm"},
+  {"ma_nv": "NV007", "ho_ten": "Trinh Thi Cam", "user": "nv007", "pass": "pass007", "luong": 8800000, "gioi_tinh": "Nữ", "tuoi": 54, "phong": "Thời trang"},
+  {"ma_nv": "NV008", "ho_ten": "Bui Tien Dat", "user": "nv008", "pass": "pass008", "luong": 10500000, "gioi_tinh": "Nam", "tuoi": 46, "phong": "Điện máy"},
+  {"ma_nv": "NV009", "ho_ten": "Vo Thi Hong", "user": "nv009", "pass": "pass009", "luong": 9300000, "gioi_tinh": "Nữ", "tuoi": 49, "phong": "Thực phẩm"},
+  {"ma_nv": "NV010", "ho_ten": "Nguyen Huu Khang", "user": "nv010", "pass": "pass010", "luong": 10100000, "gioi_tinh": "Nam", "tuoi": 50, "phong": "Thời trang"},
+  {"ma_nv": "NV011", "ho_ten": "Le Thi Thu", "user": "nv011", "pass": "pass011", "luong": 8400000, "gioi_tinh": "Nữ", "tuoi": 52, "phong": "Điện máy"},
+  {"ma_nv": "NV012", "ho_ten": "Tran Quoc Huy", "user": "nv012", "pass": "pass012", "luong": 8700000, "gioi_tinh": "Nam", "tuoi": 43, "phong": "Thực phẩm"},
+  {"ma_nv": "NV013", "ho_ten": "Dang Kim Ngan", "user": "nv013", "pass": "pass013", "luong": 40000000, "gioi_tinh": "Nữ", "tuoi": 47, "phong": "Thời trang"},
+  {"ma_nv": "NV014", "ho_ten": "Hoang Van Cuong", "user": "nv014", "pass": "pass014", "luong": 9400000, "gioi_tinh": "Nam", "tuoi": 60, "phong": "Điện máy"},
+  {"ma_nv": "NV015", "ho_ten": "Nguyen Thi Xuan", "user": "nv015", "pass": "pass015", "luong": 9200000, "gioi_tinh": "Nữ", "tuoi": 56, "phong": "Thời trang"},
+  {"ma_nv": "NV016", "ho_ten": "Vo Minh Chau", "user": "nv016", "pass": "pass016", "luong": 8700000, "gioi_tinh": "Nữ", "tuoi": 48, "phong": "Điện máy"},
+  {"ma_nv": "NV017", "ho_ten": "Phan Tien Dung", "user": "nv017", "pass": "pass017", "luong": 4600000, "gioi_tinh": "Nam", "tuoi": 42, "phong": "Thực phẩm"},
+  {"ma_nv": "NV018", "ho_ten": "Pham Thi Lan", "user": "nv018", "pass": "pass018", "luong": 8900000, "gioi_tinh": "Nữ", "tuoi": 55, "phong": "Thực phẩm"},
+  {"ma_nv": "NV019", "ho_ten": "Nguyen Van Tien", "user": "nv019", "pass": "pass019", "luong": 8700000, "gioi_tinh": "Nam", "tuoi": 59, "phong": "Thời trang"},
+  {"ma_nv": "NV020", "ho_ten": "Truong Thi Ha", "user": "nv020", "pass": "pass020", "luong": 32000000, "gioi_tinh": "Nữ", "tuoi": 53, "phong": "Điện máy"}
+]
