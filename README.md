@@ -81,7 +81,14 @@ HUIT-Python/
 │   ├── dssv.json
 │   ├── DSSV.json
 │   └── sv_gioi.json
+|
+|
 ├── KTL1 - Buổi 6.py                   # Kiểm tra lần 1 - Tuần 6
+├── KTL2 - Buổi 10/                    # Kiểm tra lần 2 - Buổi 10
+│   ├── KTL2 - Buổi 10.py
+│   ├── Nhanvien.json.
+│   ├── NhanVien_ThuocPhongChiDinh.json
+│   └── dektlan2_dechan_chinhthuc_Nguyễn Lê Anh Khoa.docx 
 └── .gitignore
 ```
 
@@ -100,8 +107,9 @@ HUIT-Python/
 | **7** | 09/10/2025 | Xử lý file, JSON | ✅ Hoàn thành |
 | **8** | 16/10/2025 | Lập trình hướng đối tượng (OOP) | ✅ Hoàn thành |
 | **9** | 23/10/2025 | Lập trình hướng đối tượng (OOP) - Nâng cao | ✅ Hoàn thành |
-| **10** | 30/10/2025 | Phát sinh ngẫu nhiên dữ liệu | 🛑 Đang phát triển |
-| **10** | 6/11/2025 | **Kiểm tra lần 2** | 🤔 Sắp có |
+| **10** | 30/10/2025 | Phát sinh ngẫu nhiên dữ liệu | ✅ Hoàn thành |
+| **11** | 6/11/2025 | **Kiểm tra lần 2** | ✅ Hoàn thành |
+| **12** | 27/11/2025 | Thư viện Thinker | 🛑 Sắp cócó |
 
 ---
 
@@ -182,6 +190,14 @@ HUIT-Python/
 
 **Bài tập mẫu:**
 - Đoán số / Tung đồng xu / BlackJack
+
+---
+
+### 📌 Tuần 11 - Kiểm tra lần 2
+**File code:** `KTL2 - Buổi 10/KTL1 - Buổi 10.py`
+**File báo cáo:** `KTL2 - Buổi 10/dektlan2_dechan_chinhthuc_Nguyễn Lê Anh Khoa.docx`
+- Đánh giá kiến thức từ Tuần 6-9
+
 ---
 
 ## 🚀 Hướng dẫn Sử dụng
