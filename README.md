@@ -68,7 +68,7 @@ HUIT-Python/
 │   └── Top 3-Output.json
 ├── Buổi 10.py                          # Bài tập trên lớp - Tuần 10
 |
-|
+├── Buổi 12/                            # Bài tập trên lớp - Tuần 12
 |
 ├── BTVN - Buoi 1.py                   # Bài tập về nhà - Tuần 1
 ├── BTVN - Buổi 2.py                   # Bài tập về nhà - Tuần 2
@@ -109,7 +109,7 @@ HUIT-Python/
 | **9** | 23/10/2025 | Lập trình hướng đối tượng (OOP) - Nâng cao | ✅ Hoàn thành |
 | **10** | 30/10/2025 | Phát sinh ngẫu nhiên dữ liệu | ✅ Hoàn thành |
 | **11** | 6/11/2025 | **Kiểm tra lần 2** | ✅ Hoàn thành |
-| **12** | 27/11/2025 | Thư viện Thinker | 🛑 Sắp cócó |
+| **12** | 27/11/2025 | Thư viện Thinker | ✅ Hoàn thành |
 
 ---
 
@@ -197,6 +197,13 @@ HUIT-Python/
 **File code:** `KTL2 - Buổi 10/KTL1 - Buổi 10.py`
 **File báo cáo:** `KTL2 - Buổi 10/dektlan2_dechan_chinhthuc_Nguyễn Lê Anh Khoa.docx`
 - Đánh giá kiến thức từ Tuần 6-9
+
+---
+
+### 📌 Tuần 12 - Thư viện Tkinter
+**File code:** `Buổi 12/`
+- Làm quen với thư viện GUI Tkinter
+
 
 ---
 
