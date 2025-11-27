@@ -1,0 +1,72 @@
+[
+    {
+    "ma_sv": "SV001",
+    "ho_ten": "Nguyễn Văn An",
+    "email": "an.nguyen@example.com",
+    "so_dien_thoai": "0901234567",
+    "lop" : "15DHTH01"
+    },
+    {
+    "ma_sv": "SV002",
+    "ho_ten": "Trần Thị Bích",
+    "email": "bich.tran@example.com",
+    "so_dien_thoai": "0902345678",
+    "lop" : "15DHTH03"
+    },
+    {
+    "ma_sv": "SV003",
+    "ho_ten": "Lê Hoàng Dũng",
+    "email": "dung.le@example.com",
+    "so_dien_thoai": "0903456789",
+    "lop" : "15DHTH02"
+    },
+    {
+    "ma_sv": "SV004",
+    "ho_ten": "Phạm Thị Hòa",
+    "email": "hoa.pham@example.com",
+    "so_dien_thoai": "0904567890",
+    "lop" : "15DHTH06"
+    },
+    {
+    "ma_sv": "SV005",
+    "ho_ten": "Đỗ Minh Khang",
+    "email": "khang.do@example.com",
+    "so_dien_thoai": "0905678901",
+    "lop" : "15DHTH02"
+    },
+    {
+    "ma_sv": "SV006",
+    "ho_ten": "Vũ Thanh Lan",
+    "email": "lan.vu@example.com",
+    "so_dien_thoai": "0906789012",
+    "lop" : "15DHTH08"
+    },
+    {
+    "ma_sv": "SV007",
+    "ho_ten": "Hoàng Văn Long",
+    "email": "long.hoang@example.com",
+    "so_dien_thoai": "0907890123",
+    "lop" : "15DHTH09"
+    },
+    {
+    "ma_sv": "SV008",
+    "ho_ten": "Ngô Thị Mai",
+    "email": "mai.ngo@example.com",
+    "so_dien_thoai": "0908901234",
+    "lop" : "15DHTH06"
+    },
+    {
+    "ma_sv": "SV009",
+    "ho_ten": "Bùi Quang Nhật",
+    "email": "nhat.bui@example.com",
+    "so_dien_thoai": "0909012345",
+    "lop" : "15DHTH04"
+    },
+    {
+    "ma_sv": "SV010",
+    "ho_ten": "Đặng Thị Oanh",
+    "email": "oanh.dang@example.com",
+    "so_dien_thoai": "0910123456",
+    "lop" : "15DHTH06"
+    }
+]
