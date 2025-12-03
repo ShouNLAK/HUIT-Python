@@ -1,0 +1,19 @@
+[
+{ "ma_khach_hang": "KH001", "ma_dinh_danh": "079123456001", "ho_ten": "Nguyen Van An" },
+{ "ma_khach_hang": "KH001", "ma_dinh_danh": "079123456002", "ho_ten": "Tran Thi Binh" },
+{ "ma_khach_hang": "KH001", "ma_dinh_danh": "079123456003", "ho_ten": "Nguyen Thi Cam" },
+
+{ "ma_khach_hang": "KH002", "ma_dinh_danh": "079223456001", "ho_ten": "Le Van Dung" },
+{ "ma_khach_hang": "KH002", "ma_dinh_danh": "079223456002", "ho_ten": "Pham Thi Em" },
+
+{ "ma_khach_hang": "KH003", "ma_dinh_danh": "079323456001", "ho_ten": "Vo Van Phuc" },
+{ "ma_khach_hang": "KH003", "ma_dinh_danh": "079323456002", "ho_ten": "Vo Thi Dao" },
+{ "ma_khach_hang": "KH003", "ma_dinh_danh": "079323456003", "ho_ten": "Vo Thu Ha" },
+{ "ma_khach_hang": "KH003", "ma_dinh_danh": "079323456004", "ho_ten": "Vo Gia Huy" },
+
+{ "ma_khach_hang": "KH004", "ma_dinh_danh": "079423456001", "ho_ten": "Dang Van Kien" },
+
+{ "ma_khach_hang": "KH005", "ma_dinh_danh": "079523456001", "ho_ten": "Hoang Van Long" },
+{ "ma_khach_hang": "KH005", "ma_dinh_danh": "079523456002", "ho_ten": "Hoang Thi Mai" },
+{ "ma_khach_hang": "KH005", "ma_dinh_danh": "079523456003", "ho_ten": "Hoang Gia Bao" }
+]

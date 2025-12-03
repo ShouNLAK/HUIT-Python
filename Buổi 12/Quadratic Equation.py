@@ -9,11 +9,12 @@ def Tinh_PTB2():
         c = float(EntryC.get())
         
         if a == 0 :
-            if (b == c and b == 0) :
-                Result_label.config(text=f"Vô số nghiệm")
-            if (a == b) :
-                Result_label.config(text=f"Vô nghiệm")
-            elif :
+            if (b == 0) :
+                if (c == 0) :
+                    Result_label.config(text=f"Vô số nghiệm")
+                else :
+                    Result_label.config(text=f"Vô nghiệm")
+            else :
                 Result_label.config(text=f"Nghiệm của phương trình = {c *(-1) / b}")
         else:
             delta = b**2 - 4*a*c
