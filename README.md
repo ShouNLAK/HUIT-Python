@@ -69,6 +69,13 @@ HUIT-Python/
 ├── Buổi 10.py                          # Bài tập trên lớp - Tuần 10
 |
 ├── Buổi 12/                            # Bài tập trên lớp - Tuần 12
+│   ├── Cel to Fer.py
+│   ├── Personal Information.py
+│   ├── Quadratic Equation.py
+│   ├── Simple Calculator.py
+│   ├── Simple Sum Calculator.py
+│   ├── Student Information.py
+│   └── sinh_vien.json
 |
 ├── BTVN - Buoi 1.py                   # Bài tập về nhà - Tuần 1
 ├── BTVN - Buổi 2.py                   # Bài tập về nhà - Tuần 2
@@ -81,7 +88,9 @@ HUIT-Python/
 │   ├── dssv.json
 │   ├── DSSV.json
 │   └── sv_gioi.json
-|
+├── BTVN - Buổi 12/                     # Bài tập về nhà - Tuần 12
+│   ├── BTVN - Buổi 12.py
+│   └── DanhsachKH.json
 |
 ├── KTL1 - Buổi 6.py                   # Kiểm tra lần 1 - Tuần 6
 ├── KTL2 - Buổi 10/                    # Kiểm tra lần 2 - Buổi 10
@@ -110,6 +119,7 @@ HUIT-Python/
 | **10** | 30/10/2025 | Phát sinh ngẫu nhiên dữ liệu | ✅ Hoàn thành |
 | **11** | 6/11/2025 | **Kiểm tra lần 2** | ✅ Hoàn thành |
 | **12** | 27/11/2025 | Thư viện Thinker | ✅ Hoàn thành |
+| **13** | 4/12/2025 | **Kiểm tra lần 3** | Sắp có |
 
 ---
 
@@ -201,9 +211,21 @@ HUIT-Python/
 ---
 
 ### 📌 Tuần 12 - Thư viện Tkinter
-**File code:** `Buổi 12/`
+**Các chủ đề:**
 - Làm quen với thư viện GUI Tkinter
+- Xử lý file .json (Đọc)
 
+**Bài tập mẫu:**
+- Đổi nhiệt độ
+- Phương trình bậc 2
+- Máy tính cơ bản
+
+---
+
+### 📌 Tuần 13 - Kiểm tra lần 3
+**File code:** `KTL2 - Buổi 13/KTL1 - Buổi 13.py`
+**File báo cáo:** `KTL2 - Buổi 13/`
+- Đánh giá kiến thức của tuần 12
 
 ---
 
