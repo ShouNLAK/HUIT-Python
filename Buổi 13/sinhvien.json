@@ -1,0 +1,32 @@
+[
+  {
+    "ma": "SV001",
+    "ten": "Nguyễn Văn A",
+    "lop": "DHKTPM17A"
+  },
+  {
+    "ma": "SV002",
+    "ten": "Trần Thị B",
+    "lop": "DHKTPM17B"
+  },
+  {
+    "ma": "SV003",
+    "ten": "Lê Văn C",
+    "lop": "DHKTPM17C"
+  },
+  {
+    "ma": "SV004",
+    "ten": "Phạm Thị D",
+    "lop": "DHKTPM17A"
+  },
+  {
+    "ma": "SV005",
+    "ten": "Đỗ Văn E",
+    "lop": "DHKTPM17B"
+  },
+  {
+    "ma": "SV006",
+    "ten": "Võ Thị F",
+    "lop": "DHKTPM17C"
+  }
+]
