@@ -1,0 +1,52 @@
+[
+  {
+    "ten_dia_diem": "Hạ Long",
+    "so_luong_than_nhan": 22,
+    "ngay_di": "01/07/2024"
+  },
+  {
+    "ten_dia_diem": "Đà Lạt",
+    "so_luong_than_nhan": 20,
+    "ngay_di": "03/07/2024"
+  },
+  {
+    "ten_dia_diem": "Phú Quốc",
+    "so_luong_than_nhan": 17,
+    "ngay_di": "05/07/2024"
+  },
+  {
+    "ten_dia_diem": "Nha Trang",
+    "so_luong_than_nhan": 16,
+    "ngay_di": "07/07/2024"
+  },
+  {
+    "ten_dia_diem": "Huế",
+    "so_luong_than_nhan": 43,
+    "ngay_di": "09/07/2024"
+  },
+  {
+    "ten_dia_diem": "Côn Đảo",
+    "so_luong_than_nhan": 30,
+    "ngay_di": "11/07/2024"
+  },
+  {
+    "ten_dia_diem": "Vũng Tàu",
+    "so_luong_than_nhan": 42,
+    "ngay_di": "13/07/2024"
+  },
+  {
+    "ten_dia_diem": "Hội An",
+    "so_luong_than_nhan": 23,
+    "ngay_di": "15/07/2024"
+  },
+  {
+    "ten_dia_diem": "Núi Phú Sĩ",
+    "so_luong_than_nhan": 37,
+    "ngay_di": "17/07/2024"
+  },
+  {
+    "ten_dia_diem": "Nhật Bản",
+    "so_luong_than_nhan": 24,
+    "ngay_di": "19/07/2024"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "ma_nv": "NV001",
+    "ho_ten": "Nhân viên 1",
+    "phong_ban": "Marketing",
+    "nam_sinh": 1980
+  },
+  {
+    "ma_nv": "NV002",
+    "ho_ten": "Nhân viên 2",
+    "phong_ban": "Hành Chính",
+    "nam_sinh": 1981
+  },
+  {
+    "ma_nv": "NV003",
+    "ho_ten": "Nhân viên 3",
+    "phong_ban": "Nhân Sự",
+    "nam_sinh": 1982
+  },
+  {
+    "ma_nv": "NV004",
+    "ho_ten": "Nhân viên 4",
+    "phong_ban": "Kỹ Thuật",
+    "nam_sinh": 1983
+  },
+  {
+    "ma_nv": "NV005",
+    "ho_ten": "Nhân viên 5",
+    "phong_ban": "Kỹ Thuật",
+    "nam_sinh": 1984
+  },
+  {
+    "ma_nv": "NV006",
+    "ho_ten": "Nhân viên 6",
+    "phong_ban": "Marketing",
+    "nam_sinh": 1985
+  },
+  {
+    "ma_nv": "NV007",
+    "ho_ten": "Nhân viên 7",
+    "phong_ban": "Hành Chính",
+    "nam_sinh": 1986
+  },
+  {
+    "ma_nv": "NV008",
+    "ho_ten": "Nhân viên 8",
+    "phong_ban": "Nhân Sự",
+    "nam_sinh": 1987
+  },
+  {
+    "ma_nv": "NV009",
+    "ho_ten": "Nhân viên 9",
+    "phong_ban": "Kỹ Thuật",
+    "nam_sinh": 1988
+  },
+  {
+    "ma_nv": "NV010",
+    "ho_ten": "Nhân viên 10",
+    "phong_ban": "Kế Toán",
+    "nam_sinh": 1989
+  },
+  {
+    "ma_nv": "NV011",
+    "ho_ten": "Nhân viên 11",
+    "phong_ban": "Marketing",
+    "nam_sinh": 1980
+  },
+  {
+    "ma_nv": "NV012",
+    "ho_ten": "Nhân viên 12",
+    "phong_ban": "Marketing",
+    "nam_sinh": 1981
+  },
+  {
+    "ma_nv": "NV013",
+    "ho_ten": "Nhân viên 13",
+    "phong_ban": "Nhân Sự",
+    "nam_sinh": 1982
+  },
+  {
+    "ma_nv": "NV014",
+    "ho_ten": "Nhân viên 14",
+    "phong_ban": "Hành Chính",
+    "nam_sinh": 1983
+  },
+  {
+    "ma_nv": "NV015",
+    "ho_ten": "Nhân viên 15",
+    "phong_ban": "Kế Toán",
+    "nam_sinh": 1984
+  },
+  {
+    "ma_nv": "NV016",
+    "ho_ten": "Nhân viên 16",
+    "phong_ban": "Hành Chính",
+    "nam_sinh": 1985
+  },
+  {
+    "ma_nv": "NV017",
+    "ho_ten": "Nhân viên 17",
+    "phong_ban": "Marketing",
+    "nam_sinh": 1986
+  },
+  {
+    "ma_nv": "NV018",
+    "ho_ten": "Nhân viên 18",
+    "phong_ban": "Nhân Sự",
+    "nam_sinh": 1987
+  },
+  {
+    "ma_nv": "NV019",
+    "ho_ten": "Nhân viên 19",
+    "phong_ban": "Hành Chính",
+    "nam_sinh": 1988
+  },
+  {
+    "ma_nv": "NV020",
+    "ho_ten": "Nhân viên 20",
+    "phong_ban": "Marketing",
+    "nam_sinh": 1989
+  }
+]
