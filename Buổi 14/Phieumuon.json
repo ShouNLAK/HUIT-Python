@@ -1,0 +1,34 @@
+[
+  {
+    "MaDocGia": "DG01",
+    "MaPhieuMuon": "PM924509",
+    "NgayMuon": "2025-12-08"
+  },
+  {
+    "MaDocGia": "DG01",
+    "MaPhieuMuon": "PM791874",
+    "NgayMuon": "2025-12-08"
+  },
+  {
+    "MaDocGia": "DG03",
+    "MaPhieuMuon": "PM679820",
+    "NgayMuon": "2025-12-08"
+  },
+  {
+    "MaDocGia": "DG04",
+    "MaPhieuMuon": "PM028842",
+    "NgayMuon": "2025-12-08"
+  },
+  {
+    "MaPhieuMuon": "PM603825",
+    "MaDocGia": "DG02",
+    "MaNV": "NV01",
+    "NgayMuon": "2025-12-08"
+  },
+  {
+    "MaDocGia": "DG01",
+    "MaPhieuMuon": "PM631173",
+    "MaNV": "NV01",
+    "NgayMuon": "2025-12-11"
+  }
+]

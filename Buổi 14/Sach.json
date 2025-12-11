@@ -1,0 +1,6 @@
+[
+  { "MaSach": "S001", "TenSach": "Lập trình Python", "TacGia": "Nguyễn A", "NamXB": 2020 },
+  { "MaSach": "S002", "TenSach": "Cấu trúc dữ liệu", "TacGia": "Trần B", "NamXB": 2019 },
+  { "MaSach": "S003", "TenSach": "Cơ sở dữ liệu", "TacGia": "Lê C", "NamXB": 2021 },
+  { "MaSach": "S004", "TenSach": "Trí tuệ nhân tạo", "TacGia": "Phạm D", "NamXB": 2022 }
+]
