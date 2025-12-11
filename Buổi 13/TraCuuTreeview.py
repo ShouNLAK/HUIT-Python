@@ -16,127 +16,133 @@ def luu_du_lieu():
 
 def xoa_bang():
     Tree.delete(*Tree.get_children())
-    
-def cap_nhat_bang(data):
+
+def cap_nhat_bang(data_):
     xoa_bang()
-    for SV in data :
-        Tree.insert("", "end", values=(SV.get("ma"), SV.get("ten"),SV.get("lop")))
-        
+    for SV in data_:
+        Tree.insert("", "end", values=(SV.get("ma"), SV.get("ten"), SV.get("lop")))
+
 def load_input():
-    MS = EntryMS.get()
-    Ten = EntryTen.get()
-    Lop = EntryLop.get()
-    return MS,Ten,Lop
+    MS = EntryMS.get().strip()
+    Ten = EntryTen.get().strip()
+    Lop = EntryLop.get().strip()
+    return MS, Ten, Lop
 
 def TimSV():
     DS = []
-    data = tai_du_lieu()
-    for item in Tree.get_children():
-        Tree.delete(item)
+    data_ = tai_du_lieu()
     Tim = EntrySV.get().strip()
-    for SV in data :
-        if Tim in SV.get("ten"):
+    for SV in data_:
+        if Tim.lower() in SV.get("ten", "").lower():
             DS.append(SV)
-    if DS:
-        for SV in DS :
-            Tree.insert("", "end", values=(SV.get("ma"), SV.get("ten"),SV.get("lop")))
-    else:
-        Tree.insert(data)
-            
+    cap_nhat_bang(DS if DS else data_)
+
 def GetInfo(event):
     Chon = Tree.selection()
     if not Chon:
         return
+    EntryMS.delete(0, tk.END)
+    EntryTen.delete(0, tk.END)
+    EntryLop.delete(0, tk.END)
+    ma, ten, lop = Tree.item(Chon[0])["values"]
+    EntryMS.insert(0, ma)
+    EntryTen.insert(0, ten)
+    EntryLop.insert(0, lop)
 
-    EntryMS.delete(0,tk.END)
-    EntryTen.delete(0,tk.END)
-    EntryLop.delete(0,tk.END)
-    
-    ma,ten,lop = Tree.item(Chon[0])["values"]
-    
-    EntryMS.insert(0,ma)
-    EntryTen.insert(0,ten)
-    EntryLop.insert(0,lop)
-    
 def Them():
-    MS,Ten,Lop = load_input()
+    MS, Ten, Lop = load_input()
     if not (MS and Ten and Lop):
-        messagebox.showerror("Lỗi", "Vui lòng nhập đầy đủ thông tin (Mã SV) để sửa.")
+        messagebox.showerror("Lỗi", "Vui lòng nhập đầy đủ thông tin.")
         return
-    data = tai_du_lieu()
-    for SV in data :
-        if SV.get("ma") == MS :
-            return messagebox.showerror("Lỗi","Trùng mã sinh viên")
-    data.append({"ma": MS, "ten": Ten, "lop": Lop})
-    cap_nhat_bang(data)
+    data_ = tai_du_lieu()
+    for SV in data_:
+        if SV.get("ma") == MS:
+            return messagebox.showerror("Lỗi", "Trùng mã sinh viên")
+    data_.append({"ma": MS, "ten": Ten, "lop": Lop})
+    cap_nhat_bang(data_)
+    global data
+    data = data_
 
 def Xoa():
-    MS,Ten,Lop = load_input()
-    if not (MS):
-        messagebox.showerror("Lỗi", "Vui lòng nhập thông tin (Mã SV) để sửa.")
+    MS, _, _ = load_input()
+    if not MS:
+        messagebox.showerror("Lỗi", "Vui lòng nhập Mã SV để xóa.")
         return
-    data = tai_du_lieu()
-    new_data = [SV for SV in data if SV.get("ma") != MS]
-    data = new_data
+    data_ = tai_du_lieu()
+    new_data = [SV for SV in data_ if SV.get("ma") != MS]
+    if len(new_data) == len(data_):
+        messagebox.showerror("Lỗi", "Không tìm thấy sinh viên để xóa.")
+        return
     cap_nhat_bang(new_data)
-    
+    global data
+    data = new_data
+
 def Sua():
     MS, Ten, Lop = load_input()
     if not (MS and Ten and Lop):
-        messagebox.showerror("Lỗi", "Vui lòng nhập đầy đủ thông tin (Mã SV) để sửa.")
+        messagebox.showerror("Lỗi", "Vui lòng nhập đầy đủ thông tin.")
         return
-    data = tai_du_lieu()
+    data_ = tai_du_lieu()
     found = False
-    for SV in data:
+    for SV in data_:
         if SV.get("ma") == MS:
             SV["ten"] = Ten
             SV["lop"] = Lop
             found = True
-        if SV.get("ten") == Ten and SV.get("lop") == Lop:
-            found = True
-            SV["ma"] = MS
+            break
     if not found:
         messagebox.showerror("Lỗi", f"Không tìm thấy sinh viên có Mã SV: {MS} để sửa.")
         return
-    cap_nhat_bang(data)
-    
+    cap_nhat_bang(data_)
+    global data
+    data = data_
 
 root = tk.Tk()
 root.title("Tra cứu thông tin sinh viên")
-root.geometry("1000x500")
+root.geometry("800x400")
 
 data = tai_du_lieu()
 
-tk.Label(root,text="Họ tên sinh viên : ").grid(row=0, column = 0, sticky="w")
-EntrySV = tk.Entry()
-EntrySV.grid(row = 0, column = 1, sticky="w")
-tk.Button(root,text="Tra cứu",command=TimSV).grid(row=0,column =2)
+frm_top = tk.Frame(root)
+frm_top.pack(fill="x", padx=10, pady=5)
 
-tk.Label(root,text="Thông tin bạn đang chọn :").grid(row=1, column = 0, sticky="w")
+tk.Label(frm_top, text="Họ tên sinh viên:").grid(row=0, column=0, sticky="w")
+EntrySV = tk.Entry(frm_top, width=30)
+EntrySV.grid(row=0, column=1, sticky="ew", padx=5)
+tk.Button(frm_top, text="Tra cứu", width=12, command=TimSV).grid(row=0, column=2, padx=5)
 
-tk.Label(root,text="Mã SV :").grid(row=2,column=0,sticky="w")
-EntryMS = tk.Entry()
-EntryMS.grid(row=2,column=1,sticky="w")
-tk.Label(root,text="Tên SV :").grid(row=2,column=2,sticky="w")
-EntryTen = tk.Entry()
-EntryTen.grid(row=2,column=3,sticky="w")
-tk.Label(root,text="Lớp :").grid(row=2,column=4,sticky="w")
-EntryLop = tk.Entry()
-EntryLop.grid(row=2,column=5,sticky="w")
+frm_info = tk.LabelFrame(root, text="Thông tin bạn đang chọn", padx=10, pady=10)
+frm_info.pack(fill="x", padx=10, pady=5)
 
-tk.Button(root, text="Thêm", width=10, command=Them).grid(row=3, column=1, padx=5, pady=5)
-tk.Button(root, text="Sửa", width=10, command=Sua).grid(row=3, column=3, padx=5, pady=5)
-tk.Button(root, text="Xóa", width=10, command=Xoa).grid(row=3, column=5, padx=5, pady=5)
-tk.Button(root, text="Lưu", width=10, command=luu_du_lieu).grid(row=3, column=0, padx=5, pady=5)
+tk.Label(frm_info, text="Mã SV:").grid(row=0, column=0, sticky="w")
+EntryMS = tk.Entry(frm_info, width=15)
+EntryMS.grid(row=0, column=1, sticky="ew", padx=5)
+tk.Label(frm_info, text="Tên SV:").grid(row=0, column=2, sticky="w")
+EntryTen = tk.Entry(frm_info, width=25)
+EntryTen.grid(row=0, column=3, sticky="ew", padx=5)
+tk.Label(frm_info, text="Lớp:").grid(row=0, column=4, sticky="w")
+EntryLop = tk.Entry(frm_info, width=15)
+EntryLop.grid(row=0, column=5, sticky="ew", padx=5)
 
-tk.Label(root, text="Danh sách sinh viên :").grid(row=4, column=0, sticky="w", padx=5, pady=5)
+frm_btn = tk.Frame(root)
+frm_btn.pack(fill="x", padx=10, pady=5)
+tk.Button(frm_btn, text="Thêm", width=12, command=Them).pack(side="left", padx=5)
+tk.Button(frm_btn, text="Sửa", width=12, command=Sua).pack(side="left", padx=5)
+tk.Button(frm_btn, text="Xóa", width=12, command=Xoa).pack(side="left", padx=5)
+tk.Button(frm_btn, text="Lưu", width=12, command=luu_du_lieu).pack(side="left", padx=5)
 
-tk.Label(root,text="Danh sách sinh viên :").grid(row=5,column=0,sticky="w")
-Tree = ttk.Treeview(root,columns=("ma","ten","lop"),show = "headings")
-Tree.heading("ma",text="Mã SV")
-Tree.heading("ten",text="Tên SV")
-Tree.heading("lop",text="Lớp")
-Tree.grid(row=6,column=0,columnspan=2)
-Tree.bind("<<TreeviewSelect>>",GetInfo)
+frm_tree = tk.LabelFrame(root, text="Danh sách sinh viên", padx=10, pady=10)
+frm_tree.pack(fill="both", expand=True, padx=10, pady=5)
 
+Tree = ttk.Treeview(frm_tree, columns=("ma", "ten", "lop"), show="headings", height=10)
+Tree.heading("ma", text="Mã SV")
+Tree.heading("ten", text="Tên SV")
+Tree.heading("lop", text="Lớp")
+Tree.column("ma", width=100, anchor="center")
+Tree.column("ten", width=250, anchor="w")
+Tree.column("lop", width=100, anchor="center")
+Tree.pack(fill="both", expand=True)
+Tree.bind("<<TreeviewSelect>>", GetInfo)
+
+cap_nhat_bang(data)
 root.mainloop()
