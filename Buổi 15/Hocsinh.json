@@ -1,0 +1,247 @@
+[
+  {
+    "maHS": "HS001",
+    "hoTen": "Nguyễn Văn A",
+    "lop": "10A1",
+    "email": "a10a1@gmail.com",
+    "sdt": "0901000001"
+  },
+  {
+    "maHS": "HS002",
+    "hoTen": "Trần Thị B",
+    "lop": "10A1",
+    "email": "b10a1@gmail.com",
+    "sdt": "0901000002"
+  },
+  {
+    "maHS": "HS003",
+    "hoTen": "Lê Văn C",
+    "lop": "10A1",
+    "email": "c10a1@gmail.com",
+    "sdt": "0901000003"
+  },
+  {
+    "maHS": "HS004",
+    "hoTen": "Phạm Thị D",
+    "lop": "10A1",
+    "email": "d10a1@gmail.com",
+    "sdt": "0901000004"
+  },
+  {
+    "maHS": "HS005",
+    "hoTen": "Hoàng Văn E",
+    "lop": "10A1",
+    "email": "e10a1@gmail.com",
+    "sdt": "0901000005"
+  },
+  {
+    "maHS": "HS006",
+    "hoTen": "Nguyễn Văn F",
+    "lop": "10A2",
+    "email": "f10a2@gmail.com",
+    "sdt": "0901000006"
+  },
+  {
+    "maHS": "HS007",
+    "hoTen": "Trần Thị G",
+    "lop": "10A2",
+    "email": "g10a2@gmail.com",
+    "sdt": "0901000007"
+  },
+  {
+    "maHS": "HS008",
+    "hoTen": "Lê Văn H",
+    "lop": "10A2",
+    "email": "h10a2@gmail.com",
+    "sdt": "0901000008"
+  },
+  {
+    "maHS": "HS009",
+    "hoTen": "Phạm Thị I",
+    "lop": "10A2",
+    "email": "i10a2@gmail.com",
+    "sdt": "0901000009"
+  },
+  {
+    "maHS": "HS010",
+    "hoTen": "Hoàng Văn K",
+    "lop": "10A2",
+    "email": "k10a2@gmail.com",
+    "sdt": "0901000010"
+  },
+  {
+    "maHS": "HS011",
+    "hoTen": "Nguyễn Văn L",
+    "lop": "10A3",
+    "email": "l10a3@gmail.com",
+    "sdt": "0901000011"
+  },
+  {
+    "maHS": "HS012",
+    "hoTen": "Trần Thị M",
+    "lop": "10A3",
+    "email": "m10a3@gmail.com",
+    "sdt": "0901000012"
+  },
+  {
+    "maHS": "HS013",
+    "hoTen": "Lê Văn N",
+    "lop": "10A3",
+    "email": "n10a3@gmail.com",
+    "sdt": "0901000013"
+  },
+  {
+    "maHS": "HS014",
+    "hoTen": "Phạm Thị O",
+    "lop": "10A3",
+    "email": "o10a3@gmail.com",
+    "sdt": "0901000014"
+  },
+  {
+    "maHS": "HS015",
+    "hoTen": "Hoàng Văn P",
+    "lop": "10A3",
+    "email": "p10a3@gmail.com",
+    "sdt": "0901000015"
+  },
+  {
+    "maHS": "HS016",
+    "hoTen": "Nguyễn Văn Q",
+    "lop": "11B1",
+    "email": "q11b1@gmail.com",
+    "sdt": "0901000016"
+  },
+  {
+    "maHS": "HS017",
+    "hoTen": "Trần Thị R",
+    "lop": "11B1",
+    "email": "r11b1@gmail.com",
+    "sdt": "0901000017"
+  },
+  {
+    "maHS": "HS018",
+    "hoTen": "Lê Văn S",
+    "lop": "11B1",
+    "email": "s11b1@gmail.com",
+    "sdt": "0901000018"
+  },
+  {
+    "maHS": "HS019",
+    "hoTen": "Phạm Thị T",
+    "lop": "11B1",
+    "email": "t11b1@gmail.com",
+    "sdt": "0901000019"
+  },
+  {
+    "maHS": "HS020",
+    "hoTen": "Hoàng Văn U",
+    "lop": "11B1",
+    "email": "u11b1@gmail.com",
+    "sdt": "0901000020"
+  },
+  {
+    "maHS": "HS021",
+    "hoTen": "Nguyễn Văn V",
+    "lop": "11B2",
+    "email": "v11b2@gmail.com",
+    "sdt": "0901000021"
+  },
+  {
+    "maHS": "HS022",
+    "hoTen": "Trần Thị W",
+    "lop": "11B2",
+    "email": "w11b2@gmail.com",
+    "sdt": "0901000022"
+  },
+  {
+    "maHS": "HS023",
+    "hoTen": "Lê Văn X",
+    "lop": "11B2",
+    "email": "x11b2@gmail.com",
+    "sdt": "0901000023"
+  },
+  {
+    "maHS": "HS024",
+    "hoTen": "Phạm Thị Y",
+    "lop": "11B2",
+    "email": "y11b2@gmail.com",
+    "sdt": "0901000024"
+  },
+  {
+    "maHS": "HS025",
+    "hoTen": "Hoàng Văn Z",
+    "lop": "11B2",
+    "email": "z11b2@gmail.com",
+    "sdt": "0901000025"
+  },
+  {
+    "maHS": "HS026",
+    "hoTen": "Nguyễn Văn AA",
+    "lop": "12C1",
+    "email": "aa12c1@gmail.com",
+    "sdt": "0901000026"
+  },
+  {
+    "maHS": "HS027",
+    "hoTen": "Trần Thị BB",
+    "lop": "12C1",
+    "email": "bb12c1@gmail.com",
+    "sdt": "0901000027"
+  },
+  {
+    "maHS": "HS028",
+    "hoTen": "Lê Văn CC",
+    "lop": "12C1",
+    "email": "cc12c1@gmail.com",
+    "sdt": "0901000028"
+  },
+  {
+    "maHS": "HS029",
+    "hoTen": "Phạm Thị DD",
+    "lop": "12C1",
+    "email": "dd12c1@gmail.com",
+    "sdt": "0901000029"
+  },
+  {
+    "maHS": "HS030",
+    "hoTen": "Hoàng Văn EE",
+    "lop": "12C1",
+    "email": "ee12c1@gmail.com",
+    "sdt": "0901000030"
+  },
+  {
+    "maHS": "HS031",
+    "hoTen": "Nguyễn Văn FF",
+    "lop": "12C2",
+    "email": "ff12c2@gmail.com",
+    "sdt": "0901000031"
+  },
+  {
+    "maHS": "HS032",
+    "hoTen": "Trần Thị GG",
+    "lop": "12C2",
+    "email": "gg12c2@gmail.com",
+    "sdt": "0901000032"
+  },
+  {
+    "maHS": "HS033",
+    "hoTen": "Lê Văn HH",
+    "lop": "12C2",
+    "email": "hh12c2@gmail.com",
+    "sdt": "0901000033"
+  },
+  {
+    "maHS": "HS034",
+    "hoTen": "Phạm Thị II",
+    "lop": "12C2",
+    "email": "ii12c2@gmail.com",
+    "sdt": "0901000034"
+  },
+  {
+    "maHS": "HS035",
+    "hoTen": "Hoàng Văn JJ",
+    "lop": "12C2",
+    "email": "jj12c2@gmail.com",
+    "sdt": "0901000035"
+  }
+]
