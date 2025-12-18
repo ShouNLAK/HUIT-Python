@@ -12,7 +12,7 @@
 <p align="center">
   <img alt="Language" src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
   <img alt="University" src="https://img.shields.io/badge/University-HUIT-FF6B35?style=for-the-badge">
-  <img alt="Status" src="https://img.shields.io/badge/Status-Ongoing-F5F227?style=for-the-badge">
+  <img alt="Status" src="https://img.shields.io/badge/Status-Completed-24ff00?style=for-the-badge">
   <img alt="License" src="https://img.shields.io/badge/License-Educational-0066CC?style=for-the-badge">
 </p>
 
@@ -76,6 +76,17 @@ HUIT-Python/
 │   ├── Simple Sum Calculator.py
 │   ├── Student Information.py
 │   └── sinh_vien.json
+├── Buổi 13/                            # Bài tập trên lớp - Tuần 13
+│   ├── TraCuuTreeview.py
+│   └── sinhvien.json
+├── Buổi 14/                            # Bài tập trên lớp - Tuần 14
+│   ├── Regex.py
+│   ├── PhieuMuonSach.py
+│   ├── Chitietphieumuon.json
+│   ├── Docgia.json
+│   ├── Nhanvien.json
+│   ├── Phieumuon.json
+│   └── Sach.json
 |
 ├── BTVN - Buoi 1.py                   # Bài tập về nhà - Tuần 1
 ├── BTVN - Buổi 2.py                   # Bài tập về nhà - Tuần 2
@@ -91,13 +102,23 @@ HUIT-Python/
 ├── BTVN - Buổi 12/                     # Bài tập về nhà - Tuần 12
 │   ├── BTVN - Buổi 12.py
 │   └── DanhsachKH.json
+├── BTVN - Buổi 13/                     # Bài tập về nhà - Tuần 13
+│   ├── DangKyDuLichAFC.py
+|   ├── diadiemdulich.json
+|   ├── nhanvien.json
+│   └── thamgia.json
 |
 ├── KTL1 - Buổi 6.py                   # Kiểm tra lần 1 - Tuần 6
 ├── KTL2 - Buổi 10/                    # Kiểm tra lần 2 - Buổi 10
 │   ├── KTL2 - Buổi 10.py
 │   ├── Nhanvien.json.
 │   ├── NhanVien_ThuocPhongChiDinh.json
-│   └── dektlan2_dechan_chinhthuc_Nguyễn Lê Anh Khoa.docx 
+│   └── dektlan2_dechan_chinhthuc_Nguyễn Lê Anh Khoa.docx
+├── KTL3 - Buổi 15/                    # Kiểm tra lần 3 - Buổi 15
+│   ├── Nguyen Le Anh Khoa - 2001240206.py
+│   ├── Hocsinh.json
+│   ├── Thamgiatrongcay.jso.json
+│   └── Nguyen Le Anh Khoa - dekiemtra_cuoiky_sang5.docx 
 └── .gitignore
 ```
 
@@ -119,7 +140,9 @@ HUIT-Python/
 | **10** | 30/10/2025 | Phát sinh ngẫu nhiên dữ liệu | ✅ Hoàn thành |
 | **11** | 6/11/2025 | **Kiểm tra lần 2** | ✅ Hoàn thành |
 | **12** | 27/11/2025 | Thư viện Thinker | ✅ Hoàn thành |
-| **13** | 4/12/2025 | **Kiểm tra lần 3** | Sắp có |
+| **13** | 4/12/2025 | Tìm hiểu về Treeview | ✅ Hoàn thành |
+| **14** | 11/12/2025 | Ôn tập tổng dạng | ✅ Hoàn thành |
+| **15** | 18/12/2025 | **Kiểm tra lần 3** | ✅ Hoàn thành |
 
 ---
 
@@ -222,10 +245,26 @@ HUIT-Python/
 
 ---
 
-### 📌 Tuần 13 - Kiểm tra lần 3
-**File code:** `KTL2 - Buổi 13/KTL1 - Buổi 13.py`
-**File báo cáo:** `KTL2 - Buổi 13/`
-- Đánh giá kiến thức của tuần 12
+### 📌 Tuần 13 - Tìm hiểu Treeview - Tkinter
+**Các chủ đề:**
+- Hiển thị danh sách
+- Xử lý file .json
+- Tiếp tục tìm hiểu GUI
+
+**Bài tập mẫu:**
+- Tra cứu danh sách sinh viên
+
+---
+
+### 📌 Tuần 14 - Ôn tập tổng dạng
+- Ôn tập trước buổi kiểm tra kết thúc học phầm
+
+---
+
+### 📌 Tuần 15 - Kiểm tra lần 3
+**File code:** `KTL3 - Buổi 15/Nguyen Le Anh Khoa - 2001240206.py`
+**File báo cáo:** `KTL2 - Buổi 13/Nguyen Le Anh Khoa - dekiemtra_cuoiky_sang5.docx`
+- Đánh giá kiến thức của toàn bộ học phần
 
 ---
 
